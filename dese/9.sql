@@ -1,0 +1,1 @@
+SELECT district_name FROM (SELECT districts.name AS district_name, SUM(expenditures.pupils) AS total_pupils FROM districts JOIN expenditures ON districts.id = expenditures.district_id GROUP BY district_name ORDER BY total_pupils LIMIT 1);

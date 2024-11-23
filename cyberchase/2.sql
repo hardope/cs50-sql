@@ -1,0 +1,1 @@
+SELECT season, title FROM episodes WHERE season IN (SELECT DISTINCT season FROM episodes) AND episode_in_season == 1

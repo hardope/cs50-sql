@@ -1,0 +1,1 @@
+SELECT performances.HR AS home_run, performances.year AS year FROM performances JOIN players ON performances.player_id = players.id WHERE players.first_name LIKE "%ken%" AND players.last_name LIKE "Griffey" AND players.birth_year = 1969 ORDER BY year DESC;

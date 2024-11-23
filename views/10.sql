@@ -1,0 +1,1 @@
+SELECT english_title AS "Title" FROM views WHERE english_title LIKE "%Fuji%" ORDER BY entropyy
